@@ -41,6 +41,7 @@ body {
   margin-top: -759px;
   box-shadow: 0 5px 4px #ffffff, 0 10px 30px #00fbff;
   border-radius: 12px;
+  text-shadow: 2px 2px 5px red;
 }
 
 .display p {
