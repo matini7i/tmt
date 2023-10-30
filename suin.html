@@ -1,0 +1,259 @@
+
+
+
+
+ <button   style="margin-left: 750px; margin-top: 6px;"        id="light-mode-button"    class="btn btn-warning">   
+  <i class="fas fa-sun"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </svg></i> 
+</button>
+
+
+<button style="margin-left: 750px; margin-top: 6px;"   id="dark-mode-button"   type="button" class="btn btn-dark"   <i class="fas fa-"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+</svg></i> </button>
+
+<script>
+  const darkModeButton = document.getElementById('dark-mode-button');
+const lightModeButton = document.getElementById('light-mode-button');
+const body = document.body;
+
+darkModeButton.addEventListener('click', () => {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+});
+
+lightModeButton.addEventListener('click', () => {
+    body.classList.add('light-mode');
+    body.classList.remove('dark-mode');
+});
+
+</script>
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود و ثبت نام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<body>
+    <div class="sin">
+        <div class="input">
+            <input class="t1" type="text" placeholder="username">
+            <input class="t2" type="email" name="" id="" placeholder="email">
+            <input class="t3" type="password" name="" id="" placeholder="password">
+            <span class="show-password" onclick="showPassword()"></span>
+           <i><img class="rr" src="image/instagram (1).png" alt=""></i>
+
+            
+            <div class="main">
+              <button class="button" style="
+              font-weight: bold;
+              " >SIGN UP</button>
+              
+              
+              <div class="loader">
+                <div class="check">
+                  <span class="check-one"></span>
+                  <span class="check-two"></span>
+                </div>
+              </div>
+              
+            </div>
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:-480px;;
+  
+font-weight: bold;
+
+text-shadow: 2px 2px 30px #350067;
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #5700c9;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+    transition: all .1s ease-in-out;
+  }
+  
+}
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent; 
+  margin: 30px auto 0 auto;
+  border: solid 2px #424242;
+  border-top: solid 2px #1c89ff;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.check {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(-4px,50px,0);
+  opacity: 0;
+  span:nth-child(1) {
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+  span:nth-child(2) {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg) translate3d(14px, -4px, 0);
+    transform-origin: 100%;
+  }
+}
+
+.loader.active {
+  animation: loading 2s ease-in-out; 
+  animation-fill-mode: forwards;
+}
+
+.check.active {
+  opacity: 1;
+  transform: translate3d(-4px,4px,0);
+  transition: all .5s cubic-bezier(.49, 1.74, .38, 1.74);
+  transition-delay: .2s;
+}
+
+@keyframes loading {
+  30% {
+    opacity:1; 
+  }
+  
+  85% {
+    opacity:1;
+    transform: rotate(1080deg);
+    border-color: #262626;
+  }
+  100% {
+    opacity:1;
+    transform: rotate(1080deg);
+     border-color: #1c89ff;
+  }
+}
+
+
+</style>
+            
+</div>
+            
+        </div>
+    </div>
+    <script>
+        function showPassword() {
+            var passwordField = document.querySelector(".t3");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  setInterval(() => {
+  const clock = document.querySelector('.display');
+
+  let time = new Date();
+  let sec = time.getSeconds();
+  let min = time.getMinutes();
+  let hr = time.getHours();
+
+  let day = 'AM';
+  if (hr > 12) {
+    day = 'PM';
+    hr = hr - 12;
+  }
+  if (hr == 0) {
+    hr = 12;
+  }
+  if (sec < 10) {
+    sec = '0' + sec;
+  }
+  if (min < 10) {
+    min = '0' + min;
+  }
+  if (hr < 10) {
+    hr = '0' + hr;
+  }
+  clock.innerHTML = `<p>${hr}</p>:<p>${min}</p>:<p>${sec}</p> <p>${day}</p>`;
+}, 1000);
+</script>
+
+
+
+<div class="clock">
+  <div class="display"></div>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
+
+
+
+
